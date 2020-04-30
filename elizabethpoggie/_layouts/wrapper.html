@@ -1,3 +1,8 @@
+---
+
+
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +20,20 @@
     <body>
 
         <!-- put header here -->
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
+                <h5 class="my-0 mr-md-auto font-weight-normal">{{site.title}}</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2 text-dark" href="#">About</a>
+                    <a class="p-2 text-dark" href="#">Posts</a>
+                    <a class="p-2 text-dark" href="#">Projects</a>
+                </nav>
+                <a class="btn btn-outline-primary" href="#">Contact</a>
+        </div>
+
+        <!-- populate page with main content -->
         {{content}}
+
+
         <!-- put footer here -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
