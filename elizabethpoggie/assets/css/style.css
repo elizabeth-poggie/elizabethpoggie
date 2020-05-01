@@ -36,25 +36,15 @@ a:hover {
   width:70px;
 }
 
-
+/*cover specs */
 .cover-container {
   position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     /*border: 15px solid orange*/
 }
-/*
-html,
-body {
-  height: 100%;
-  background-color: #333;
+
+/*navbar specs*/
+.navbar {
+  z-index:1000 !important; /*otherwise the nav bar sits behind the page content sometimes*/
+  position:relative !important;
 }
-
-body {
-  display: -ms-flexbox;
-  display:flex;
-  color: #fff;
-}
-
-.cover-container {}
-*/
-

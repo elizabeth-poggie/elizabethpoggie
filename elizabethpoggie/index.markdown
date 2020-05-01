@@ -4,5 +4,3 @@
 
 layout: index
 ---
-
-hello world
