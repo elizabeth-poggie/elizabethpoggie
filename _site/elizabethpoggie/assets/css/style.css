@@ -1,0 +1,11 @@
+@font-face {
+    font-family: title_font;
+    src: url(../fonts/NHaasGroteskTXPro-75Bd.ttf);
+  }
+
+.navigation {
+
+}
+h5{
+    font-family: title_font;
+}

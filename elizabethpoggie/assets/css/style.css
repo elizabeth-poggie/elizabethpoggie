@@ -1,11 +1,37 @@
+
+/* everything to do with fonts and text*/
 @font-face {
     font-family: title_font;
     src: url(../fonts/NHaasGroteskTXPro-75Bd.ttf);
-  }
-
-.navigation {
-
 }
+
+@font-face {
+  font-family: sub_font;
+  src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+h1{
+  font-family: title_font;
+  font-size: 8rem !important;
+}
+
 h5{
-    font-family: title_font;
+  font-family: title_font;
+  font-size: 1.6rem !important;
 }
+
+a{
+  font-family: sub_font;
+  color: black !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+  border-bottom: none !important;
+}
+
+/* everything to do with images */
+.quotations {
+  width:70px;
+}
+
