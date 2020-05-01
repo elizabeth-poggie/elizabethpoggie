@@ -1,5 +1,5 @@
 
-/* everything to do with fonts and text*/
+/*fonts*/
 @font-face {
     font-family: title_font;
     src: url(../fonts/NHaasGroteskTXPro-75Bd.ttf);
@@ -10,6 +10,7 @@
   src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
 }
 
+/*Text Specs*/
 h1{
   font-family: title_font;
   font-size: 7rem !important;
@@ -31,12 +32,12 @@ a:hover {
   border-bottom: none !important;
 }
 
-/* everything to do with images */
+/*Image sizing*/
 .quotations {
   width:70px;
 }
 
-/*cover specs */
+/*cover specs*/
 .cover-container {
   position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
