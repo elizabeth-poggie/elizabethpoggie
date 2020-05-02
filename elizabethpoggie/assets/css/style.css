@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: sub_font;
-  src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
+  src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
 }
 
 /*Text Specs*/
@@ -20,6 +20,11 @@ h5{
   font-family: title_font;
   font-size: 1.3rem !important;
   line-height: .9 !important;
+}
+
+h6{
+  font-family: sub_font;
+  color: black !important;
 }
 
 a{
@@ -48,4 +53,17 @@ a:hover {
 .navbar {
   z-index:1000 !important; /*otherwise the nav bar sits behind the page content sometimes*/
   position:relative !important;
+}
+
+/*custom progress bar*/
+.my-sidebar {
+  -ms-flex: 0 0 230px;
+  flex: 0 0 230px;
+  background-color: greenyellow; 
+} 
+
+@media (max-width: 690px) {
+.my-sidebar {
+  display: none; 
+} 
 }

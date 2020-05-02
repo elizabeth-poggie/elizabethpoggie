@@ -3,4 +3,4 @@ layout: about
 title: About
 permalink: /about/
 ---
-hello it is me poggie
+hi my name is poggie and sometimes i do stuff
