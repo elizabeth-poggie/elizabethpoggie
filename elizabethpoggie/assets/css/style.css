@@ -10,10 +10,24 @@
   src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
 }
 
+@font-face {
+  font-family: small_font;
+  src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
 /*Text Specs*/
 h1{
   font-family: title_font;
   font-size: 7rem !important;
+}
+
+h2 {
+  font-family: title_font;
+  font-size: 1.3rem !important;
+}
+
+p {
+  font-family: small_font;
 }
 
 h5{
@@ -59,11 +73,22 @@ a:hover {
 .my-sidebar {
   -ms-flex: 0 0 230px;
   flex: 0 0 230px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   background-color: greenyellow; 
 } 
 
 @media (max-width: 690px) {
 .my-sidebar {
   display: none; 
+  
 } 
+}
+
+/* requirement for scrolsby*/
+
+.affix {
+  top: 20px;
+  z-index: 9999 !important;
 }

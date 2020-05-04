@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: index-v2
 title: About
 permalink: /about/
 ---

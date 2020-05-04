@@ -1,11 +1,87 @@
+
+/*fonts*/
 @font-face {
     font-family: title_font;
     src: url(../fonts/NHaasGroteskTXPro-75Bd.ttf);
-  }
-
-.navigation {
-
 }
+
+@font-face {
+  font-family: sub_font;
+  src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+
+@font-face {
+  font-family: small_font;
+  src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+/*Text Specs*/
+h1{
+  font-family: title_font;
+  font-size: 7rem !important;
+}
+
+h2 {
+  font-family: title_font;
+  font-size: 1.3rem !important;
+}
+
+p {
+  font-family: small_font;
+}
+
 h5{
-    font-family: title_font;
+  font-family: title_font;
+  font-size: 1.3rem !important;
+  line-height: .9 !important;
+}
+
+h6{
+  font-family: sub_font;
+  color: black !important;
+}
+
+a{
+  font-family: sub_font;
+  color: black !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+  border-bottom: none !important;
+}
+
+/*Image sizing*/
+.quotations {
+  width:70px;
+}
+
+/*cover specs*/
+.cover-container {
+  position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    /*border: 15px solid orange*/
+}
+
+/*navbar specs*/
+.navbar {
+  z-index:1000 !important; /*otherwise the nav bar sits behind the page content sometimes*/
+  position:relative !important;
+}
+
+/*custom progress bar*/
+.my-sidebar {
+  -ms-flex: 0 0 230px;
+  flex: 0 0 230px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: greenyellow; 
+} 
+
+@media (max-width: 690px) {
+.my-sidebar {
+  display: none; 
+  
+} 
 }
