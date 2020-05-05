@@ -27,7 +27,8 @@ h2 {
 }
 
 p {
-  font-family: small_font;
+  font-family: sub_font;
+  font-size: .8rem;
 }
 
 h5{
@@ -107,17 +108,8 @@ position: relative;
   position: fixed;
 }
 
-/* side bar for the about page */
+/* Configuring the about page styling */
 
-.sidebarleft {
-  width: 120px;
-  left: 42px;
-  float: left;
-  z-index: 2;
-}
-
-.section {
-  position: relative;
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
 }
