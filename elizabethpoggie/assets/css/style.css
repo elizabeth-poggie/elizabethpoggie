@@ -86,13 +86,13 @@ a:hover {
 } 
 }
 
-/* requirement for scrolsby*/
+/* requirement for scrolsby */
 
 .lad {
 position: relative;
 }
 
-/* sicky menue */
+/* sicky menu for the about page */
 .nav {
   display: block;
   flex-wrap: nowrap;
@@ -105,4 +105,19 @@ position: relative;
   top: 20px !important;
   z-index: 9999 !important;
   position: fixed;
+}
+
+/* side bar for the about page */
+
+.sidebarleft {
+  width: 120px;
+  left: 42px;
+  float: left;
+  z-index: 2;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
