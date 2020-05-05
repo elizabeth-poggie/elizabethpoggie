@@ -1,53 +1,63 @@
+--- 
+layout: wrapper
+---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
-    top: 20px;
-    z-index: 9999 !important;
-  }
-  </style>
-</head>
-<body>
-
-<div class="container">
-  <div class="row">
-    <nav class="col-sm-3">
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-      </ul>
-    </nav>
-    <div class="col-sm-9">   
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
-      <h1>Some text to enable scrolling</h1>
+<div class=""> 
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3">
+        <div id="list-example" class="list-group nav" data-spy="affix" data-offset-top="205">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        </div>
+      </nav>
+      <div class="col-sm-9">
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example lad">
+          <h4 id="list-item-1">Item 1</h4>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              
+          <h4 id="list-item-2">Item 2</h4>
+          <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1><p>...</p>
+          <h4 id="list-item-3">Item 3</h4>
+          <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+          <h4 id="list-item-4">Item 4</h4>
+          <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+              <h1>Some text to enable scrolling</h1>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-</body>
-</html>
-
-

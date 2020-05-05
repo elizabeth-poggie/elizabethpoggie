@@ -88,6 +88,11 @@ a:hover {
 
 /* requirement for scrolsby*/
 
+.lad {
+position: relative;
+}
+
+/* sicky menue */
 .nav {
   display: block;
   flex-wrap: nowrap;
