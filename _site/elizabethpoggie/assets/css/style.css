@@ -85,3 +85,10 @@ a:hover {
   
 } 
 }
+
+/* requirement for scrolsby*/
+
+.affix {
+  top: 20px;
+  z-index: 9999 !important;
+}
