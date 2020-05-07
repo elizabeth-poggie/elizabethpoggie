@@ -40,6 +40,11 @@ p {
   font-size: .8rem;
 }
 
+.but-larger {
+  font-family: sub_font;
+  font-size: 1.5rem !important;
+}
+
 h5, .h5{
   font-family: title_font;
   font-size: 1.3rem !important;
