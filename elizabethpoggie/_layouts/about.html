@@ -5,6 +5,14 @@ layout: wrapper
 <!-- cover page sorta with me and a blurb-->
 <div class="container">
   <div class="row">
+    <div class="col">
+      <img src="{{page.headshot | prepend: site.baseurl}}" style="width: 500px;">
+    </div>
+    <div class="col">
+      <h6> {{page.blurb | markdownify}} </h6>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-sm-10">  
       {% for this in page.sections %}
       <div class="flex-container p-3">
@@ -13,10 +21,11 @@ layout: wrapper
         </div>
         <div class="flex-container">
           {% for this in this.section.subsections %}
-          <div class="p-3"> <!-- add padding here eventually -->
+          <div class="p-3 flex_col"> <!-- add padding here eventually -->
             <h3>{{this.subsection.name}}</h3> 
             {% for this in this.subsection.positions %}
               <h5>{{this.position.name}}</h5> 
+              <h6>{{this.position.date | markdownify}}</h6>
               <h6>{{this.position.blurb | markdownify }}</h6>
             {% endfor %}
           </div>

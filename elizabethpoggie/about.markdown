@@ -3,6 +3,9 @@ layout: about
 title: About
 permalink: /about/
 
+headshot: /assets/images/me.png
+blurb: As someone who is about to enter the work force during a pandemic, I hope my CV finds you well.
+
 sections:
 - section: 
     name: Tech Skills
@@ -26,12 +29,12 @@ sections:
         - position: 
             name: Proficient
             blurb: "
-            Git<code>&middot;</code>DB2<code>&middot;</code>Jekyll<code>&middot;</code>Boostrap
+            Git <code>&middot;</code> DB2 <code>&middot;</code> Jekyll <code>&middot;</code> Boostrap
             "
         - position: 
             name: Experience
             blurb: "
-            Spring<code>&middot;</code>Django<code>&middot;</code>Postgres<code>&middot;</code>Angular<code>&middot;</code>React
+            Spring <code>&middot;</code> Django <code>&middot;</code> Postgres <code>&middot;</code> Angular <code>&middot;</code> React
             "
 - section: 
     name: Education
@@ -41,37 +44,11 @@ sections:
         positions: 
         - position: 
             name: BSc Computer Science, Minor Neuroscience
-            date: Fall 2018 | Present
+            date: Fall 2018 - Present
             blurb: "
             Expected to Graduate in December 2020
             <br> 
-            GPA: Secret ;)
-            "
-    - subsection: 
-        name: Course Work
-        positions:  
-        - position:
-            name: Graduate Level
-            blurb: "
-            Cloud Computing
-            <br>
-            Brain Inspired AI
-            "
-        - position:
-            name: Undergraduate Level
-            blurb: "
-            Algorithms & Data Structures
-            <br>
-            Operating Systems
-            <br>
-            Databases
-            <br>
-            Software Design
-            <br>
-            Computability Theory
-            <br>
-            Programming Lang & Paradigms
-            <br>
+            GPA: 3.9
             "
 - section:
     name: Experience
@@ -83,28 +60,16 @@ sections:
             name: Frontend Developer
             date:  Summer 2019
             blurb: "
-            Modernizing components of a risk management system in Angular.  
-            <br>
-            Python scripting to parse user usage and preferences to determine areas of improvement for the application. 
-            <br>
-            Separating application logic and user interface logic of a frontend heavy application by creating a java based RESTful service. 
+            Separating application logic and user interface logic of a frontend heavy application by creating a Java based RESTful service. Improving the frontend portion of the application by modernizing components and creating custom ones based on user demands. Python scripting to parse user usage and preferences to determine areas of improvement for the application. 
             "
     - subsection:
         name: Computer Taskforce
         positions: 
         - position: 
             name: Web Admin
-            date:  Fall 2019 | present
+            date:  Fall 2019 - present
             blurb: "
-            Running elections for student groups at McGill
-            <br>
-            Helping solve responsive design issues for other clubs
-            <br>
-            Developing the CTF main website https://ctf.science.mcgill.ca/
-            <br>
-            Defining the club's branding, sweatshirts, posters and wallpapers
-            <br>
-            Focus on increasing student involvement in developing our technologies by hosting tutorials and development nights. 
+            Running elections for student groups at McGill. Helping solve responsive design issues for other clubs. Developing the CTF main website https://ctf.science.mcgill.ca/. Defining the club's branding, sweatshirts, posters and wallpapers. Focus on increasing student involvement in developing our technologies by hosting tutorials and development nights. 
             "
     - subsection:
         name: P'tit Marche
@@ -113,9 +78,7 @@ sections:
             name: Services and Branding
             date:  Summer 2018
             blurb: "
-            Customer service, inventory, and sales part time in Summer 2018
-            <br>
-            Created promotional images for contract negotiations with IGAs in order to assert stand locations in Spring 2019. 
+            Customer service, inventory, and sales part time in Summer 2018. Created promotional images for contract negotiations with IGAs in order to assert stand locations in Spring 2019. 
             "
     - subsection:
         name: Windmill Heights

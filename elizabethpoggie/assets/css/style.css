@@ -40,7 +40,7 @@ p {
   font-size: .8rem;
 }
 
-h5{
+h5, .h5{
   font-family: title_font;
   font-size: 1.3rem !important;
   line-height: .9 !important;
