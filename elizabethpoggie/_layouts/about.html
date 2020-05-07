@@ -3,15 +3,18 @@ layout: wrapper
 ---
 
 <!-- cover page sorta with me and a blurb-->
-<div class="container">
+
+  <div class="cover-container d-flex w-100 h-100 mx-auto flex-column p-5 vertical-align"> 
   <div class="row">
-    <div class="col">
-      <img src="{{page.headshot | prepend: site.baseurl}}" style="width: 500px;">
+    <div class="col vertical-align">
+      <img src="{{page.headshot | prepend: site.baseurl}}" style="width: 100%;">
     </div>
-    <div class="col">
-      <h6> {{page.blurb | markdownify}} </h6>
+    <div class="col vertical-align p-5">
+      <p> {{page.blurb | markdownify}} </p>
     </div>
   </div>
+</div>
+<div class="p-5">
   <div class="row">
     <div class="col-sm-10">  
       {% for this in page.sections %}
@@ -34,6 +37,7 @@ layout: wrapper
       </div>
       {% endfor %}
     </div>
+    <!--
     <nav class="col-sm-2 py-3">
       <ul class="nav nav-pills nav-stacked p-3" data-spy="affix" data-offset-top="205">
         {% for this in page.sections %}
@@ -41,6 +45,7 @@ layout: wrapper
         {% endfor %}
       </ul>
     </nav>
+    -->
   </div>
 </div>
 

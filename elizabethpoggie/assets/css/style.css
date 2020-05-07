@@ -68,9 +68,8 @@ a:hover {
 
 /*cover specs*/
 .cover-container {
-  position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    /*border: 15px solid orange*/
+  width: 100vw !important;
+  height: calc(100vh - 73px) !important; /* 73px is the height of the navigation bar */
 }
 
 /*navbar specs*/
@@ -130,4 +129,11 @@ position: relative;
 /* for md middle dot coloring */
 code {
   color: #1d2124;
+}
+
+/* for image vertical allignment */
+
+.vertical-align {
+  display: flex !important; 
+  align-items: center;
 }

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 
 headshot: /assets/images/me.png
-blurb: As someone who is about to enter the work force during a pandemic, I hope my CV finds you well.
+blurb: "I am currently in my year year at McGill University studying Computer Science. I interned at Morgan Standley as an application developer in the summer of 2019 and I am returning this summer as a backend dev."
 
 sections:
 - section: 
