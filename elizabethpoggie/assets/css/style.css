@@ -32,6 +32,10 @@ h3 {
 }
 
 p {
+  font-family: small_font;
+}
+
+.but-smaller {
   font-family: sub_font;
   font-size: .8rem;
 }
@@ -117,4 +121,13 @@ position: relative;
 
 .flex-container {
   display: flex;
+}
+
+.section {
+  width: 100px;
+}
+
+/* for md middle dot coloring */
+code {
+  color: #1d2124;
 }
