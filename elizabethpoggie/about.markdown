@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 
 headshot: /assets/images/me.png
-blurb: "I am currently in my last year at McGill University studying Computer Science. I interned at Morgan Standley as an application developer in the summer of 2019 and I am returning again this summer as a backend dev."
+blurb: "I am currently in my last year at McGill University studying Computer Science. I interned at Morgan Standley developing equity risk systems in the summer of 2019 and I am interning again this summer to work in corporate funding technology."
 
 sections:
 - section: 
@@ -60,7 +60,7 @@ sections:
             name: Frontend Developer
             date:  Summer 2019
             blurb: "
-            Separating application logic and user interface logic of a frontend heavy application by creating a Java based RESTful service. Improving the frontend portion of the application by modernizing components and creating custom ones based on user demands. Python scripting to parse user usage and preferences to determine areas of improvement for the application. 
+            Separating application logic and user interface logic of a frontend heavy application by creating a Java based RESTful service. Improving the frontend portion of the application by modernizing components and creating custom ones based on user demands. Preformed additional Python scripting to parse user usage and preferences to determine areas of improvement for the application. 
             "
     - subsection:
         name: Computer Taskforce
@@ -69,7 +69,7 @@ sections:
             name: Web Admin
             date:  Fall 2019 - present
             blurb: "
-            Running elections for student groups at McGill. Helping solve responsive design issues for other clubs. Developing the CTF main website https://ctf.science.mcgill.ca/. Defining the club's branding, sweatshirts, posters and wallpapers. Focus on increasing student involvement in developing our technologies by hosting tutorials and development nights. 
+            Running elections for approximately 30 different student groups at McGill. Solving responsive design issues for other clubs and developing the CTF main website. Increasing student involvement in developing technologies by hosting tutorials and development nights. 
             "
     - subsection:
         name: P'tit Marche

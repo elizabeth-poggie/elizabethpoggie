@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Applying Cloud Computing to Network Security
-date: 2020-04-30 16:30:33 -0400
+time: 2020/04/30 
 authors: Nathalie Paquin, Elizabeth Poggie, Yuxiang Ren
 context: Final project for COMP598, a graduate course that explores networks and cloud computing. 
 git: https://github.com/elizabeth-poggie/HoneyNebula
