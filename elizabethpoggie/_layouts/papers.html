@@ -1,0 +1,10 @@
+---
+layout: wrapper
+permalink: /papers/
+---
+{% for paper in site.papers %}
+    <p>{{paper.date}}</p>
+    <p>{{paper.title}}</p>
+    <a href="{{paper.permalink | prepend: site.baseurl}}">Read More</a>
+    <a href="{{paper.git | prepend: site.baseurl}}">git</a>
+{% endfor %}
