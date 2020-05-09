@@ -18,7 +18,7 @@
 /*Text Specs*/
 h1{
   font-family: title_font;
-  font-size: 7rem !important;
+  font-size: 9vw !important;
 }
 
 h2 {
@@ -70,6 +70,7 @@ a:hover {
 .cover-container {
   width: 100vw !important;
   height: calc(100vh - 73px) !important; /* 73px is the height of the navigation bar */
+  
 }
 
 /* navbar styling */
@@ -82,12 +83,6 @@ a:hover {
 
 .quotations { /*Image sizing for quotations*/
   width:70px;
-}
-
-@media screen and (max-width: 768px) {
-  .small-title-font {
-    font-size: 5rem !important;
-  }
 }
 
 /*custom progress bar*/
