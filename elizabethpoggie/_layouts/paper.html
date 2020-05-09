@@ -5,15 +5,16 @@ layout: wrapper
  <div class="prelude but-smaller">
      <p>{{page.context}}</p>
  </div>
- 
- <h3>{{page.title}}</h3>
+ <h3 class="responsive-title">{{page.title}}</h3>
  <p>{{page.authors}}</p>
  
 </div>
 <div class="container">
     <div class="row">
-        <div class="side-responsive-padding">
+        <div class="col">
+        <div class="px-md-5 px-sm-3 px-3 side-responsive-padding">
             {{content | markdownify }}
+        </div>
         </div>
     </div>
 </div>

@@ -3,12 +3,13 @@ layout: wrapper
 permalink: /papers/
 ---
 {% for paper in site.papers %}
-<div class="container text-center">
-    <p>{{paper.time}}</p>
-    <h5>{{paper.title}}</h5>
-    <div class=""> 
-        <a href="{{paper.permalink | prepend: site.baseurl}}"><p>Read More</p></a>
-        <a href="{{paper.git | prepend: site.baseurl}}"><p>git</p></a>
+<div class="paper-container text-center pb-5">
+    {{paper.time | markdownify}}
+    <a href="{{paper.permalink | prepend: site.baseurl}}"><h3>{{paper.title}}</h3></a>
+    <div class="flex-container vertical-align" style="justify-content: center;"> 
+        <a class="p-2" href="{{paper.permalink | prepend: site.baseurl}}"><p>Read More</p></a>
+        <br>
+        <a class="p-2" href="{{paper.git | prepend: site.baseurl}}"><p>Git</p></a>
     </div>
 </div>
 {% endfor %}

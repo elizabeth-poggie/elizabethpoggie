@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: Applying Cloud Computing to Network Security
+title: Analyzing Network Security using Cloud Computing
 time: 2020/04/30 
 authors: Nathalie Paquin, Elizabeth Poggie, Yuxiang Ren
 context: Final project for COMP598, a graduate course that explores networks and cloud computing. 
@@ -21,47 +21,58 @@ This platform offers additional features including an ELK stack, which includes 
 T-Pot uses Suricata for monitoring malicious activity. When one of the existing Suricata rules are matched, the information regarding the attack that caused the match is logged [4]. Kibana is then used to visualize the logged data. T-Pot also uses p0f as a fingerprinting tool to identify what type of operating system is being run on the computers of attackers [5].
 
 ## Procedure
-1. Made a GCP account
-2. Deployed several different architectures on their own VM instances to find the one that best suited our goals (T-Pot was deemed the best match)
-3. Wrote Hashicorp DSL to auto-deploy the VMs (Via Terraform)
-4. (Part 1) Deployed several T-Pot instances in different locations around the globe to harvest location specific data. Deployment locations: Montréal, São Paulo, Los Angeles, Frankfurt and Tokyo
-5. (Part 2) Deployed a VM named “HoneyCore” to aggregate all of the data from the different VM instances deployed in part 2 via Logstash to harvest data representing attacks on a global scale. Deployment locations: Taiwan, Tokyo, Sydney, Frankfurt, Zürich, Montréal, Iowa and Salt Lake City
-6. Harvested data from Kibana for both parts of the project
+1) Made a GCP account
+
+2) Deployed several different architectures on their own VM instances to find the one that best suited our goals (T-Pot was deemed the best match)
+
+3) Wrote Hashicorp DSL to auto-deploy the VMs (Via Terraform)
+
+4) (Part 1) Deployed several T-Pot instances in different locations around the globe to harvest location specific data. Deployment locations: Montréal, São Paulo, Los Angeles, Frankfurt and Tokyo
+
+5) (Part 2) Deployed a VM named “HoneyCore” to aggregate all of the data from the different VM instances deployed in part 2 via Logstash to harvest data representing attacks on a global scale. Deployment locations: Taiwan, Tokyo, Sydney, Frankfurt, Zürich, Montréal, Iowa and Salt Lake City
+
+6) Harvested data from Kibana for both parts of the project
 
 ## Results
 In the first part of the project, statistics were compared from honeypots stationed in five different locations: Montréal, São Paulo, Los Angeles, Frankfurt and Tokyo over a twenty-four hour period. Across all of these honeypots, the Dionaea honeypot was the most attacked, with the Cowrie honeypot being the second most attacked. The honeytrap honeypot was the third most attacked across almost all locations, with the exception being that the honeypot stationed in Montréal had the heralding honeypot as its third most attacked honeypot (see Figure 1).
 
-x 
+![Figure](../assets/papers/Honeypot/fig_1.png)
 Figure 1: Top 5 Most Attacked Honeypots Per Deployment
 
 Most of the attacks on the Heralding honeypot in Montreal occurred before 8 AM and originated from Bulgaria, as seen in Figure 3.
 
-x
+![Figure](../assets/papers/Honeypot/fig_2.png)
+
 Figure 2: Top 3 Suricata Alert Categories Per Deployment
 
-x
+![Figure](../assets/papers/Honeypot/a.jpg)
+
 Figure 3: Targeted Honeypots and Attacks by Country for Montreal
 
 The results from p0f in which p0f was able to identify the operating system being run on the machines of attackers showed that most of the machines were running Windows 7 or 8. Destination ports that were repeatedly seen to be attacked were 445, 443, 1433 and 8088. The main reputation that most of the source IP addresses had was “known attacker”, for all of the deployments (see Figure 4 for an example).
 
-x
+![Figure](../assets/papers/Honeypot/e.jpg)
+
 Figure 4: Attacker Source IP Reputation for Tokyo Deployment
 
 In the second part of the project, the data from even more VM instances (different from those in part one) was aggregated into one core instance, HoneyCore. The individual instances were situated in Taiwan, Tokyo, Sydney, Frankfurt, Zürich, Montréal, Iowa and Salt Lake City.
 
 The main honeypots attacked over these aggregated instances were the same as in the first part of the project: dionaea, cowrie, honeytrap, rdpy and heralding, which was also one of the top five attacked honeypots in São Paulo in the first part (see Figure 5). The total number of attacks recorded on the HoneyCore deployment over a 24 hour window amounted to more than 1.3 million attacks.
 
-x
+![Figure](../assets/papers/Honeypot/b.jpg)
+
 Figure 5: Top 5 Most Attacked Honeypots for Core Deployment
 
 Most of the attacks over the 24 hour period came from Ireland, with Russia being the source with the next highest number of attacks, followed by Vietnam, Indonesia and Brazil (see Figure 6).
 
-x
+![Figure](../assets/papers/Honeypot/f.jpg)
+
 Figure 6: Targeted Honeypots and Attacks by Country on HoneyCore
 
 There were two major attack periods over 24 hours, in which Suricata alert categories of the type “Attempted User Privilege Gain” spiked. 386,333 attacks of this nature occurred at 21:30 and 443,932 attacks of that same type took place at 00:30 (as seen in Figure 7).
 
-x
+![Figure](../assets/papers/Honeypot/c.jpg)
+
 Figure 7: Suricata Alert Categories for Core Deployment
 
 As seen in the first part of the project, most of the machines that attacked the HoneyCore instance were running Windows 7 or 8, when identifiable by p0f. Among the primary destination ports attacked, the ports 445 and 443 were the ports which were frequently attacked in both the instances from the first part of the project as well as the HoneyCore in the second part.
@@ -75,7 +86,8 @@ In a 2005 article from Microsoft, it was announced that the mssqld protocol was 
 
 Cowrie was the second most attacked honeypot in both parts of the project. Because cowrie is a medium-high interaction honeypot, it is able to log an attacker’s commands, since it enables attackers to interact more with its system. The most frequently used command across the cowrie honeypots by attackers was the “system” command. This as well as several of the other most common commands seen (see Figure 8) shows that attackers were trying to get information about the honeypot’s operating system and were trying to execute commands. The second most commonly used command was a command used to verify whether a bot (in this case an fbot) has successfully infiltrated the target device [13], confirming that a large number of the attacks were launched from bots.
 
-x
+![Figure](../assets/papers/Honeypot/d.jpg)
+
 Figure 8: Top 10 Cowrie Inputs From Frankfurt Deployment
 
 The heralding honeypot was only ranked as one of the top 5 attacked honeypots for our Montreal T-Pot deployment, but none of the others (refer to Figure 1). These attacks occurred around 8:00 EST which translates to mid-afternoon in Bulgarian time. For our core deployment, the Heralding honeypot is also within the top five most attacked honeypots, as seen in Figure 6. This is a low interaction honeypot designed to capture malicious login attempts over several protocols such as ftp, http/https, telnet, pop3/pop3s, ssh, and smtp [14]. Malicious login attempts are associated with credential stuffing attacks where botnets attempt to steal a user’s identity in order to collect information, money or goods. According to a 2018 article, it was noted that these types of attacks were on the rise so it is likely to see even more Heralding attacks for our Montreal VM and our core deployment in the future [15].

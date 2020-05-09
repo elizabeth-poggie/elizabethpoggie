@@ -145,12 +145,14 @@ code {
 
 /* for the layout of a paper */
 
+@media screen and (min-width: 992px) { /* padding for larger screens must be big so it reads like a book*/
 .side-responsive-padding {
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 20vw !important;
+  padding-right: 20vw !important;
+}
 }
 
-.paper-container {
+.paper-container { /* this is the header of each paper*/
   padding-left: 20vw !important;
   padding-right: 20vw !important;
   height: 60vh;
@@ -159,6 +161,14 @@ code {
   align-items: center;
 }
 
-.prelude {
+.prelude { /*i want the prelude before the title to be small */
   width: 35vw !important;
+}
+
+.responsive-title { /* the font on the title should be smaller on smaller screens */
+  font-size: 2rem !important;
+}
+
+img {
+  width: 100%
 }
