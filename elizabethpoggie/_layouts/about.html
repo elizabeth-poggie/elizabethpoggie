@@ -4,26 +4,26 @@ layout: wrapper
 
 <!-- cover page sorta with me and a blurb-->
 
-  <div class="cover-container container d-flex w-100 h-100 mx-auto flex-column p-5 vertical-align"> 
+  <div class="cover-container cover-container-medium container d-flex w-100 h-100 mx-auto flex-column p-3 px-md-5 px-lg-5 px-xl-5 vertical-align"> 
   <div class="row">
-    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-2">
       <img src="{{page.headshot | prepend: site.baseurl}}" style="width: 100%;">
     </div>
-    <div class="col-12 col-md-6 col-lg-6 col-xl-6 vertical-align p-5 but-larger">
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6 vertical-align p-2 px-md-5 px-lg-5 px-xl-5 but-larger">
       <p class="but-larger"> {{page.blurb | markdownify}} </p>
     </div>
   </div>
 </div>
-<div class="container pb-5 px-5">
+<div class="container p-3 px-md-5 px-lg-5 px-xl-5">
   <div class="">
     <div class="">  
       {% for this in page.sections %}
       <div class="row p-3">
-        <div class="col-12 col-lg-1 col-xl-1 text-left text-lg-right text-xl-right px-3 p-lg-3 p-xl-3">
+        <div class="col-12 col-lg-1 col-xl-1 text-left text-lg-right text-xl-right p-2">
           <p id="{{this.section.name}}" class="but-smaller">{{this.section.name}}</p>
         </div>
           {% for this in this.section.subsections %}
-          <div class="col p-3"> <!-- add padding here eventually -->
+          <div class="col p-2"> <!-- add padding here eventually -->
             <h3>{{this.subsection.name}}</h3> 
             {% for this in this.subsection.positions %}
               <h5>{{this.position.name}}</h5> 

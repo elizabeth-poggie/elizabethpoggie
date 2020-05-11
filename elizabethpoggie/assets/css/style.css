@@ -33,6 +33,7 @@ h3 {
 
 p {
   font-family: small_font;
+  margin-bottom: 0rem !important;
 }
 
 .but-smaller {
@@ -103,6 +104,13 @@ a:hover {
     width: auto !important;
     height: auto !important;
   }
+}
+
+@media (max-width: 1200px) {
+.cover-container-medium {
+  width: auto !important;
+    height: auto !important;
+}
 }
 
 @media (max-width: 690px) {
