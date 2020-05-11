@@ -4,12 +4,12 @@ layout: wrapper
 
 <!-- cover page sorta with me and a blurb-->
 
-  <div class="cover-container container d-flex w-100 h-100 mx-auto flex-column p-5 vertical-align"> 
+  <div class="cover-container d-flex w-100 h-100 mx-auto flex-column p-5 vertical-align"> 
   <div class="row">
-    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="col vertical-align">
       <img src="{{page.headshot | prepend: site.baseurl}}" style="width: 100%;">
     </div>
-    <div class="col-12 col-md-6  col-lg-6 col-xl-6 vertical-align p-5 but-larger">
+    <div class="col vertical-align p-5 but-larger">
       <p class="but-larger"> {{page.blurb | markdownify}} </p>
     </div>
   </div>
