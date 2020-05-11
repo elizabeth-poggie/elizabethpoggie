@@ -2,17 +2,17 @@
 /*fonts*/
 @font-face {
     font-family: title_font;
-    src: url(".../NHaasGroteskTXPro-75Bd.ttf") format("TrueType");
+    src: url("./NHaasGroteskTXPro-75Bd.ttf");
 }
 
 @font-face {
   font-family: sub_font;
-  src: url(".../NHaasGroteskTXPro-55Rg.ttf") format("TrueType");
+  src: url("./NHaasGroteskTXPro-55Rg.ttf");
 }
 
 @font-face {
   font-family: small_font;
-  src: url(".../EBGaramond-VariableFont_wght.ttf") format("TrueType");
+  src: url("./EBGaramond-VariableFont_wght.ttf");
 }
 
 /*Text Specs*/
