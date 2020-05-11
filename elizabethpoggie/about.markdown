@@ -69,7 +69,7 @@ sections:
             name: Web Admin
             date:  Fall 2019 - present
             blurb: "
-            Running elections for approximately 30 different student groups at McGill. Solving responsive design issues for other clubs and developing the CTF main website. Increasing student involvement in developing technologies by hosting tutorials and development nights. 
+            Running elections for approximately 30 different student groups at McGill. Solving responsive design issues for other clubs and developing the CTF main website. Increasing student involvement in development by hosting tutorials and dev nights. 
             "
     - subsection:
         name: P'tit Marche

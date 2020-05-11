@@ -31,9 +31,13 @@ h3 {
   font-size: 2rem !important;
 }
 
+h4 {
+  font-family: small_font;
+  font-size: 1.2rem !important;
+}
+
 p {
   font-family: small_font;
-  margin-bottom: 0rem !important;
 }
 
 .but-smaller {
