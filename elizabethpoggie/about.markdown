@@ -8,7 +8,7 @@ blurb: "I am currently in my last year at McGill University studying Computer Sc
 
 sections:
 - section: 
-    name: Tech Skills
+    name: Skills
     subsections:
     - subsection: 
         name: Languages
