@@ -1,0 +1,194 @@
+
+/*fonts*/
+@font-face {
+    font-family: title_font;
+    src: url("./NHaasGroteskTXPro-75Bd.ttf");
+}
+
+@font-face {
+  font-family: sub_font;
+  src: url("./NHaasGroteskTXPro-55Rg.ttf");
+}
+
+@font-face {
+  font-family: small_font;
+  src: url("./EBGaramond-VariableFont_wght.ttf");
+}
+
+/*Text Specs*/
+h1{
+  font-family: title_font;
+  font-size: 9vw !important;
+}
+
+h2 {
+  font-family: title_font;
+  font-size: 1.3rem !important;
+}
+
+h3 {
+  font-family: title_font;
+  font-size: 2rem !important;
+}
+
+h4 {
+  font-family: small_font;
+  font-size: 1.2rem !important;
+}
+
+p {
+  font-family: small_font;
+}
+
+.but-smaller {
+  font-family: sub_font;
+  font-size: .8rem;
+}
+
+.but-larger {
+  font-family: sub_font;
+  font-size: 2.4vh !important;
+}
+
+h5, .h5{
+  font-family: title_font;
+  font-size: 1.3rem !important;
+  line-height: .9 !important;
+}
+
+h6{
+  font-family: sub_font;
+  color: black !important;
+}
+
+a{
+  font-family: sub_font;
+  color: black !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+  border-bottom: none !important;
+}
+
+/* cover specs */
+.cover-container {
+  width: 100vw !important;
+  height: calc(100vh - 73px) !important; /* 73px is the height of the navigation bar */
+  
+}
+
+/* navbar styling */
+.navbar {
+  z-index:1000 !important; /*otherwise the nav bar sits behind the page content sometimes*/
+  position:relative !important;
+}
+
+/* Index styling */
+
+.quotations { /*Image sizing for quotations*/
+  width:70px;
+}
+
+/*custom progress bar*/
+.my-sidebar {
+  -ms-flex: 0 0 230px;
+  flex: 0 0 230px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: greenyellow; 
+} 
+
+@media (max-width: 768px) {
+  .text-middle {
+    text-align: center !important;
+  }
+  .cover-container {
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 1200px) {
+.cover-container-medium {
+  width: auto !important;
+    height: auto !important;
+}
+}
+
+@media (max-width: 690px) {
+.my-sidebar {
+  display: none; 
+  
+} 
+}
+
+/* requirement for scrolsby */
+
+.lad {
+position: relative;
+}
+
+/* sicky menu for the about page */
+.nav {
+  display: block;
+  flex-wrap: nowrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.affix {
+  top: 20px !important;
+  z-index: 9999 !important;
+  position: fixed;
+}
+
+/* Configuring the about page styling */
+
+.flex-container {
+  display: flex;
+}
+
+.section {
+  width: 100px;
+}
+
+/* for md middle dot coloring */
+code {
+  color: #1d2124;
+}
+
+/* for image vertical allignment */
+
+.vertical-align {
+  display: flex !important; 
+  align-items: center;
+}
+
+/* for the layout of a paper and papers */
+
+@media screen and (min-width: 992px) { /* padding for larger screens must be big so it reads like a book*/
+.side-responsive-padding {
+  padding-left: 20vw !important;
+  padding-right: 20vw !important;
+}
+}
+
+.paper-container { /* this is the header of each paper*/
+  padding-left: 20vw !important;
+  padding-right: 20vw !important;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prelude { /*i want the prelude before the title to be small */
+  width: 35vw !important;
+}
+
+img {
+  width: 100%
+}
