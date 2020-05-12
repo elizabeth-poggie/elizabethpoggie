@@ -32,6 +32,8 @@ github_username:  jekyll
 collections:
   papers:
     output: true 
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -39,6 +41,11 @@ defaults:
       type: "papers"
     values:
       layout: "paper"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
   
 # Build settings
 theme: minima

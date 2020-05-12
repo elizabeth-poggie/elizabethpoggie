@@ -1,0 +1,27 @@
+---
+layout: wrapper
+---
+
+<div class="cover-container" style="padding-bottom: 2rem;">
+    <img class="gallery-image" src="{{page.cover-image | prepend: site.baseurl}}">
+</div>
+
+<div class="container p-5">
+    <div class="row vertical-responsive-padding ">
+        <div class="col-12 col-lg-6 col-xl-6">
+            <h3>{{page.title}}</h3>
+            <hw>{{page.time}}</hw>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-6">
+            <p>{{page.blurb}}</p>
+        </div>  
+    </div>
+</div>
+
+{% for image in site.static_files %}
+    {% if image.path contains page.gallery-link %}
+    <div class="gallery-image-container">
+        <img class= "gallery-image" src="{{ site.baseurl }}{{ image.path }}"/>
+    </div>
+    {% endif %}
+{% endfor %}

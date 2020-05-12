@@ -1,0 +1,20 @@
+---
+layout: wrapper
+---
+
+<div class="container">
+    <div class="row">
+{% for project in site.projects %}
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="hvrbox">
+                <a href="{{project.permalink | prepend: site.baseurl}}">
+                    <img src="{{project.cover-image | prepend: site.baseurl}}" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <h3 class="hvrbox-text">{{project.title}}</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+{% endfor %}
+    </div>
+</div>
