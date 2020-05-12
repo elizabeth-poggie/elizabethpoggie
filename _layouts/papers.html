@@ -9,7 +9,9 @@ permalink: /papers/
     <div class="flex-container vertical-align" style="justify-content: center;"> 
         <a class="p-2" href="{{paper.permalink | prepend: site.baseurl}}"><p>Read More</p></a>
         <br>
-        <a class="p-2" href="{{paper.git}}"><p>Git</p></a>
+        {% if paper.git %}
+            <a class="p-2" href="{{paper.git}}"><p>Git</p></a>
+        {% endif %}
     </div>
 </div>
 {% endfor %}

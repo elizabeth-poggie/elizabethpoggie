@@ -20,10 +20,10 @@ layout: wrapper
       {% for this in page.sections %}
       <div class="row p-3">
         <div class="col-12 col-lg-1 col-xl-1 text-left text-lg-right text-xl-right p-2">
-          <p id="{{this.section.name}}" class="but-smaller">{{this.section.name}}</p>
+          <p id="{{this.section.name}}" class="but-smaller fix-text-on-small-screens">{{this.section.name}}</p>
         </div>
           {% for this in this.section.subsections %}
-          <div class="col p-2"> <!-- add padding here eventually -->
+          <div class="col for-small p-2"> <!-- add padding here eventually -->
             <h3>{{this.subsection.name}}</h3> 
             {% for this in this.subsection.positions %}
               <h5>{{this.position.name}}</h5> 

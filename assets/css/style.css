@@ -91,15 +91,18 @@ a:hover {
   height: auto;
 }
 
-/*custom progress bar*/
-.my-sidebar {
-  -ms-flex: 0 0 230px;
-  flex: 0 0 230px;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  background-color: greenyellow; 
-} 
+@media (max-width: 768px) {
+  .for-small {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .fix-text-on-small-screens {
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+    margin-bottom: 0em !important;
+    font-style: italic;
+  }
+}
 
 @media (max-width: 768px) {
   .text-middle {
