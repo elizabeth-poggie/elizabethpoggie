@@ -16,9 +16,24 @@
 }
 
 /*Text Specs*/
+@media (max-width: 768px) {
+  h1{
+    font-family: title_font;
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 1200px) {
 h1{
   font-family: title_font;
-  font-size: 8vw !important;
+  font-size: 5rem !important;
+}
+}
+
+@media (min-width: 1200px) {
+  h1{
+    font-family: title_font;
+    font-size: 6rem !important;
+  }
 }
 
 h2 {
