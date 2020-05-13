@@ -10,4 +10,4 @@ time: 2019 - 2020
 
 I branded the club. 
 
-From the sweatshirts, to wallpapers, to posters, and even to our user interfaces, I tried to maintain a consistent aesthetic throughout these mediums.
+From the sweatshirts, to wallpapers, to posters, and even to our internal web applications, I tried to maintain a consistent aesthetic throughout these mediums.
