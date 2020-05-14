@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 
 headshot: /assets/images/me.png
-blurb: "I am currently in my last year at McGill University studying Computer Science. I interned at Morgan Standley developing equity risk systems in the summer of 2019 and I am interning again this summer to work in corporate funding technology."
+blurb: "I am currently in my last year at McGill University studying Computer Science. I interned at Morgan Stanley developing equity risk systems in the summer of 2019 and I am interning again this summer to work in corporate funding technology."
 
 sections:
 - section: 
