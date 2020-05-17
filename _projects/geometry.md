@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /projects/ctf/
+permalink: /projects/geometry/
 cover-image: /assets/projects/geometry/1.png
 gallery-link: /projects/geometry/images/
 title: Geometry Study
