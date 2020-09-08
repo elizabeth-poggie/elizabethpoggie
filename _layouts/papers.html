@@ -2,16 +2,97 @@
 layout: wrapper
 permalink: /papers/
 ---
-{% for paper in site.papers %}
-<div class="paper-container text-center pb-5">
-    {{paper.time | markdownify}}
-    <a href="{{paper.permalink | prepend: site.baseurl}}"><h3 class="responsive-title">{{paper.title}}</h3></a>
-    <div class="flex-container vertical-align" style="justify-content: center;"> 
-        <a class="p-2" href="{{paper.permalink | prepend: site.baseurl}}"><p>Read More</p></a>
-        <br>
-        {% if paper.git %}
-            <a class="p-2" href="{{paper.git}}"><p>Git</p></a>
-        {% endif %}
+
+<div class="container  pt-4">
+    <div class="pb-2 pb-md-4 pb-lg-4 pb-xl-4" style="display: flex; justify-content: center;">
+        <h1>Portfolio</h1>
     </div>
-</div>
+
+<div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+    <h3> UI/UX </h3>
+        <div class="row">
+{% for project in site.projects %}
+    {% if project.category == "UI/UX" %}
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                <a href="{{project.permalink | prepend: site.baseurl}}">
+                    <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                        <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                        <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                        <h2 style="color:black;">{{project.title}}</h5>
+                        <p style="color:black;">{{project.blurb}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    {% endif %}
 {% endfor %}
+        </div>
+    </div>
+
+    <div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+        <h3> Academic </h3>
+            <div class="row">
+    {% for project in site.projects %}
+        {% if project.category == "Academic" %}
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                    <a href="{{project.permalink | prepend: site.baseurl}}">
+                        <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                            <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                            <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                            <h2 style="color:black;">{{project.title}}</h5>
+                            <p style="color:black;">{{project.blurb}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        {% endif %}
+    {% endfor %}
+            </div>
+        </div>
+
+        <div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+            <h3> Branding </h3>
+                <div class="row">
+        {% for project in site.projects %}
+            {% if project.category == "Branding" %}
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                        <a href="{{project.permalink | prepend: site.baseurl}}">
+                            <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                                <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                                <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                                <h2 style="color:black;">{{project.title}}</h5>
+                                <p style="color:black;">{{project.blurb}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            {% endif %}
+        {% endfor %}
+                </div>
+            </div>
+
+        
+            <div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+                <h3> Art </h3>
+                    <div class="row">
+            {% for project in site.projects %}
+                {% if project.category == "Art" %}
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                            <a href="{{project.permalink | prepend: site.baseurl}}">
+                                <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                                    <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                                    <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                                    <h2 style="color:black;">{{project.title}}</h5>
+                                    <p style="color:black;">{{project.blurb}}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                {% endif %}
+            {% endfor %}
+                    </div>
+                </div>
+
+</div>
+
+

@@ -2,10 +2,22 @@
 layout: project
 permalink: /projects/portraits/
 cover-image: /assets/projects/portraits/1.png
-gallery-link: /projects/portraits/images
-link: https://www.instagram.com/elizabethpoggie/
-title: Portraits
-time: 2019 - 2020
+blurb: Commisioned work. 
+category: Art
 ---
 
-A few examples of my portraits. I don't have fancy software so these are actually mostly done with a combination of OneNote and Inkscape... Some are commissioned, some are for fun. This has been my hobby over the years.
+### Portrait Work
+
+2018 - present
+
+Here are a few examples of some portraits I make. Some are commissioned, some are for fun. This has been my hobby over the years :) 
+
+[See more of my work here](link: https://www.instagram.com/elizabethpoggie/)
+
+<br>
+
+<img src="../../assets/projects/portraits/images/0.png"/>
+
+<img src="../../assets/projects/portraits/images/1.png"/>
+
+<img src="../../assets/projects/portraits/images/2.png"/>

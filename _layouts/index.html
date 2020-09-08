@@ -1,27 +1,117 @@
 ---
 layout: wrapper
 ---
-<div class="container d-flex w-100 h-100 mx-auto flex-column p-5 vertical-align: middle;">
-    
-    <main role="main" class="inner cover"> 
-        <div class="row p-4">
-            <div class="col-12 col-lg-2 col-md-2 col-xl-3">
-                <img class="quotations m-3d-none d-none d-md-block" style="float:right;" src="{{site.baseurl}}/assets/svg/edit-tools.svg" alt="failure">
-            </div>
-            <div class="col">
-                <h1 class="small-title-font text-middle ">Sometimes I do things and they work out</h1>
-                <p class="text-middle" style="color: lightblue;">and sometimes I don't finish my portfolio in time.... this site is under construction</p>
+<main role="main" class="px-5">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 vertical-align p-5 px-md-5 py-md-0 px-lg-5 py-lg-0 px-xl-5 py-xl-0 but-larger">
+            <div>
+                <h1 class="cover-heading main-text">Hey!</h1>
+                <p class="lead main-text">I am currently in my last semester at McGill majoring Computer Science. This is the year I become an adult.  </p>
+                <br>
+                <p class="main-text pb-1">
+                    <a href="{{site.baseurl}}/about/" style="color:#fe8e66 !important; font-size: 1.1rem">Learn more ></a>
+                </p>
+                <p class="main-text">
+                    <a href="{{site.baseurl}}/contact/" class="btn btn-lg btn-primary" style="background-color:#fe8e66 !important; border-color:#fe8e66 !important; font-size: 1.1rem; color: black !important;">Hire me</a>
+                </p>
             </div>
         </div>
-    </main>
-    <footer class="mastfoot mt-auto text-right d-none d-sm-none d-md-block">
-        <div class="inner">
-            <a href="{{site.baseurl}}/about/"><h5>About</h5></a>
-            <a href="{{site.baseurl}}/papers/"><h5>Papers</h5></a>
-            <a href="{{site.baseurl}}/projects/"><h5>Projects</h5></a>
-            <a href="{{site.baseurl}}/contact/"><h5>Contact</h5></a>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-2 p-md-5 p-lg-5 p-xl-5">
+          <img src="./assets/images/me.png" style="width: 100%;">
         </div>
-    </footer>
+    </div>
+  </main>
+
+<div class="container  pt-4">
+    <div class="pb-2 pb-md-4 pb-lg-4 pb-xl-4" style="display: flex; justify-content: center;">
+        <h1>Portfolio</h1>
+    </div>
+
+<div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+    <h3> UI/UX </h3>
+        <div class="row">
+{% for project in site.projects %}
+    {% if project.category == "UI/UX" %}
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                <a href="{{project.permalink | prepend: site.baseurl}}">
+                    <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                        <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                        <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                        <h2 style="color:black;">{{project.title}}</h5>
+                        <p style="color:black;">{{project.blurb}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    {% endif %}
+{% endfor %}
+        </div>
+    </div>
+
+    <div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+        <h3> Academic </h3>
+            <div class="row">
+    {% for project in site.projects %}
+        {% if project.category == "Academic" %}
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                    <a href="{{project.permalink | prepend: site.baseurl}}">
+                        <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                            <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                            <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                            <h2 style="color:black;">{{project.title}}</h5>
+                            <p style="color:black;">{{project.blurb}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        {% endif %}
+    {% endfor %}
+            </div>
+        </div>
+
+        <div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+            <h3> Branding </h3>
+                <div class="row">
+        {% for project in site.projects %}
+            {% if project.category == "Branding" %}
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                        <a href="{{project.permalink | prepend: site.baseurl}}">
+                            <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                                <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                                <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                                <h2 style="color:black;">{{project.title}}</h5>
+                                <p style="color:black;">{{project.blurb}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            {% endif %}
+        {% endfor %}
+                </div>
+            </div>
+
+        
+            <div class="pb-2 pb-md-5 pb-lg-5 pb-xl-5">
+                <h3> Art </h3>
+                    <div class="row">
+            {% for project in site.projects %}
+                {% if project.category == "Art" %}
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-4 p-2">
+                            <a href="{{project.permalink | prepend: site.baseurl}}">
+                                <div class="card" style="width: 100%; border-radius: 0rem; border: 0px;">
+                                    <img class="card-img-top" src="{{project.cover-image | prepend: site.baseurl}}" alt="Card image cap">
+                                    <div class="card-body" style="padding: 0rem; padding-top: .25rem;">
+                                    <h2 style="color:black;">{{project.title}}</h5>
+                                    <p style="color:black;">{{project.blurb}}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                {% endif %}
+            {% endfor %}
+                    </div>
+                </div>
+
 </div>
 
 

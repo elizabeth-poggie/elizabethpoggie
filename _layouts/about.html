@@ -1,50 +1,76 @@
----
-layout: wrapper
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="Elizabeth Poggie" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
+    <!-- should loop through all main pages for nav with https://www.youtube.com/watch?v=6N1X5XffuUA&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=15 -->
+
+    <!-- put header here -->
+    <div class="d-flex flex-column flex-md-row align-items-center pt-4 px-4 pb-2 pb-md-4 px-md-4 navbar">
+        <h5 class="my-0 mr-md-auto"><a class="h5" href="{{site.baseurl}}/" style="color: black !important;">{{site.title}}</a></h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="px-2" style="color: black !important;">elizabeth.poggie@mail.mcgill.ca</a>
+            <a style="color: black !important;">(450) 600 3435</a>
+            <a type="button" href="{{site.baseurl}}/" class="btn btn-default btn-circle mx-2"><i class="fa fa-home" style="color: white"></i></a>
+        </nav>
+    </div> 
 <!-- cover page sorta with me and a blurb-->
-
-  <div class="container d-flex w-100 h-100 mx-auto flex-column p-3 px-md-5 px-lg-5 px-xl-5 vertical-align"> 
-  <div class="row">
-    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-2">
-      <img src="{{page.headshot | prepend: site.baseurl}}" style="width: 100%;">
-    </div>
-    <div class="col-12 col-md-6 col-lg-6 col-xl-6 vertical-align p-2 px-md-5 px-lg-5 px-xl-5 but-larger">
-      <p class="but-larger"> {{page.blurb | markdownify}} </p>
-    </div>
-  </div>
-</div>
 <div class="container p-3 px-md-5 px-lg-5 px-xl-5">
   <div class="">
     <div class="">  
       {% for this in page.sections %}
+      {% if this.section.name == "Skills" %}
       <div class="row p-3">
-        <div class="col-12 col-lg-1 col-xl-1 text-left text-lg-right text-xl-right p-2">
+        <div class="col-12 col-lg-2 col-xl-2 text-left text-lg-right text-xl-right p-2">
           <p id="{{this.section.name}}" class="but-smaller fix-text-on-small-screens">{{this.section.name}}</p>
         </div>
           {% for this in this.section.subsections %}
-          <div class="col for-small p-2"> <!-- add padding here eventually -->
+          <div class="col for-small p-2 pb-4"> <!-- add padding here eventually -->
             <h3>{{this.subsection.name}}</h3> 
             {% for this in this.subsection.positions %}
-              <h5>{{this.position.name}}</h5> 
-              <h6>{{this.position.date | markdownify}}</h6>
-              <h6>{{this.position.blurb | markdownify }}</h6>
+              <div>
+                <h5>{{this.position.name}}</h5> 
+                <h6>{{this.position.date | markdownify}}</h6>
+                <h6>{{this.position.blurb | markdownify }}</h6>
+              </div>
             {% endfor %}
           </div>
           {% endfor %}
       </div>
+      {% endif %}
+      {% if this.section.name != "Skills" %}
+      <div class="row p-3">
+        <div class="col-12 col-lg-2 col-xl-2 text-left text-lg-right text-xl-right p-2">
+          <p id="{{this.section.name}}" class="but-smaller fix-text-on-small-screens">{{this.section.name}}</p>
+        </div>
+        <div class="col-10 for-small p-2">
+          {% for this in this.section.subsections %}
+            <div class="pb-4">
+              <h3>{{this.subsection.name}}</h3> 
+              {% for this in this.subsection.positions %}
+                <h5>{{this.position.name}}</h5> 
+                <h6>{{this.position.date | markdownify}}</h6>
+                <h6>{{this.position.blurb | markdownify }}</h6>
+            {% endfor %} 
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
-    <!--
-    <nav class="col-sm-2 py-3">
-      <ul class="nav nav-pills nav-stacked p-3" data-spy="affix" data-offset-top="205">
-        {% for this in page.sections %}
-        <li><a class="but-smaller" href="#{{this.section.name}}">{{this.section.name}}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-    -->
   </div>
 </div>
 
 {{content}}
+</html>

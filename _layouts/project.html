@@ -1,33 +1,41 @@
----
-layout: wrapper
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="Elizabeth Poggie" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
 
-<div class="cover-container" style="padding-bottom: 2rem;">
-    <img class="gallery-image" src="{{page.cover-image | prepend: site.baseurl}}">
-</div>
+        {% if page.category != "Academic" %}
+            <link href="{{site.baseurl}}/assets/css/project-styles.css" rel="stylesheet">
+        {% endif %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-<div class="container p-5">
-    <div class="row vertical-responsive-padding ">
-        <div class="col-12 col-lg-6 col-xl-6">
-            <h3>{{page.title}}</h3>
-            <hw>{{page.time}}</hw>
+    <div class="d-flex flex-column flex-md-row align-items-center pt-4 px-4 pb-2 pb-md-4 px-md-4 navbar">
+        <h5 class="my-0 mr-md-auto"><a class="h5" href="{{site.baseurl}}/" style="color: black !important;">{{site.title}}</a></h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a type="button" href="{{site.baseurl}}/" class="btn btn-default btn-circle mx-2"><i class="fa fa-home" style="color: white"></i></a>
+        </nav>
+    </div> 
+
+    <body>
+    <div class="cover-container">
+        <img class="gallery-image" src="{{page.cover-image | prepend: site.baseurl}}">
+    </div>
+
+
+    <div class="container p-5">
+        <div class="row">
+            <div class="col sides">
+                {{page.content}}
+            </div>  
         </div>
-        <div class="col-12 col-lg-6 col-xl-6">
-            <p>{{content}}</p>
-            {% if page.play %}
-            <a href="{{page.play}}"><p>Play it here</p></a>
-            {% endif %}
-            {% if page.link %}
-            <a href="{{page.link}}"><p>See more here</p></a>
-            {% endif %}
-        </div>  
     </div>
-</div>
 
-{% for image in site.static_files %}
-    {% if image.path contains page.gallery-link %}
-    <div class="gallery-image-container">
-        <img class= "gallery-image" src="{{ site.baseurl }}{{ image.path }}"/>
-    </div>
-    {% endif %}
-{% endfor %}
+</html>
