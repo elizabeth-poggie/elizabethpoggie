@@ -2,10 +2,31 @@
 layout: project
 permalink: /projects/volare/
 cover-image: /assets/projects/volare/cover.png
-gallery-link: /projects/volare/images/
-link: https://issuu.com/volaremagazine/docs/volare-2.1__4_ 
-title: Volare Cover
-time: 2018
+blurb: Magazine covers and commisions. 
+category: Art
 ---
 
-This is the Classic’s Creative Journal and I have also done their cover for 2 years now. The play that was being focused on this time was the Bacchae so I tried to keep the mood of the cover elegant for the journal, while still maintaining the chaotic and violent nature of the play. 
+### Volare Cover Design
+
+2018 - 2020
+
+This is the Classic’s Creative Journal and I have done their cover for 2 years now. 
+
+[See more here](https://issuu.com/volaremagazine/docs/volare-2.1__4_ )
+
+<br>
+
+<img src="../../assets/projects/volare/images/1.png"/>
+
+<img src="../../assets/projects/volare/images/2.png"/>
+
+<img src="../../assets/projects/volare/images/3.png"/>
+
+<img src="../../assets/projects/volare/images/4.png"/>
+
+<img src="../../assets/projects/volare/images/5.png"/>
+
+<img src="../../assets/projects/volare/images/6.png"/>
+
+
+
