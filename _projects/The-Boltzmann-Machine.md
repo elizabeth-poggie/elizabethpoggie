@@ -4,6 +4,7 @@ permalink: /papers/boltzmann
 cover-image: /assets/projects/volare/template.png
 blurb: Final project for COMP596. 
 category: Academic
+type: paper
 ---
 
 ### The Boltzmann Machine

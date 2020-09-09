@@ -56,6 +56,11 @@ p {
   margin-bottom: .5rem;
 }
 
+li {
+  font-family: small_font;
+  margin-bottom: .5rem;
+}
+
 .but-smaller {
   font-family: sub_font;
   font-size: .8rem;
@@ -78,6 +83,7 @@ h6{
 }
 
 a{
+  text-decoration: none;
   font-family: small_font;
   color: #fe8e66 !important;
 }

@@ -4,6 +4,7 @@ permalink: /projects/panic/
 cover-image: /assets/projects/panic/cover.png
 blurb: a UI/UX research project for panic.
 category: UI/UX
+type: paper
 ---
 
 ### Panic Mitigation
@@ -216,3 +217,196 @@ Now that we have a base knowledge on the scenario maps and user persona, we can 
 ### Wire Frames 
 
 Now that the screen requirements have been properly scoped, they can be designed. In order to create a successful layout, we need to incorporate the Laws of UX in Appendix 1 to ensure a well-informed design as well as some other important facets. First, the designs were developed with Miller’s Law in mind. This states that the average person can only keep seven items in working memory and so each screen only has up to seven elements visible to the user at any given time. Additionally, we use an infinite scroll for navigating content such as journal entries and CBT exercises as opposed to pagination. This ensures more user engagement and is best suited for mobile. Finally, almost all the components the user might read are written in first person. This helps users feel more motivated to click and increases interaction (Caglar, 2020).
+
+<br>
+
+[1] Home Screen 
+
+<img src="../../assets/projects/panic/01.png"/>
+
+The time it takes the user to click the “Panic” button during an attack will be minimized due to its size (Fitt’s Law, Doherty Threshold). Because the panic button dominates the home screen view, there are less items that the user needs to think about clicking on when undergoing an attack (Hick’s Law). Additionally, the progress of long-term goals is shown on the home screen to serve as a reminder of what the user is striving towards (Zeigarnik Effect). Finally, the user can add journal entries by selecting “+” in a similar way you can add items in almost all of Google’s applications (Jakob’s law). 
+
+<br>
+
+[2] CBT Screen
+
+<img src="../../assets/projects/panic/02.png"/>
+
+Exercises are organized according to CBT category membership (Law of Proximity) and each category has an artistic style associated with it (Law of Similarity). Consequently, we do not need to define borders to signify a category which will make the design feel cleaner. As well, an exercise within a CBT category that is most effective will always appear at the beginning of the sequence (Von Restorff Effect). Finally, to hint to the user that they need to horizontally scroll to discover more exercises, we should partially show half an exercise if the list requires. 
+
+<br>
+
+[3] Journal Screen 
+
+<img src="../../assets/projects/panic/03.png"/>
+
+Users can manipulate the bar up and down to reveal the calendar or entry view. This is important as the entries and the calendar are intricately linked together and also minimizes the number of clicks for navigation (Law of Proximity). Entries are distinct and surrounded by boarders (Law of Common Region). 
+
+<br>
+
+[4] Entry Screen
+
+<img src="../../assets/projects/panic/04.png"/>
+
+This is designed to match the user’s scanning pattern with the most important components at the start of the sequence (Serial Position effect). Users can submit an entry if and only if a mood is selected as this will allow us to make associations with the users mood and habits at a later point. 
+
+<br>
+
+[5] “Before you begin” activity Screen 
+
+<img src="../../assets/projects/panic/05.png"/>
+
+Whereas the “Begin” button is the primary choice, the “Always Skip” is secondary and requires a different styling. Having a button visual hierarchy is an important factor when decreasing user’s decision time (Doherty Threshold). As well, “Always Skip” is placed before the “Begin” button as this will match the user’s scanning pattern (Caglar, 2020). A common mistake of many designers is to place the primary button before other options because they want the user to notice the primary selection first, but this is unnecessary as the primary button is already styled to be the most noticeable. As well, the “Always Skip” is left empty as pre-filling does not respect the user. Finally, there is a bar that the users can optionally use to bring up the instructions again at any point during the exercise. 
+
+<br>
+
+[6] Relaxing an Attack Example: 
+
+Relaxation therapy category - Box Breathing
+
+<img src="../../assets/projects/panic/06.png"/>
+
+This exercise will be a simple animation of the breathing exercise for the user. This exercise is a feature of almost every iCBT workbook because it is a first line treatment when dealing with an attack. Consequently, the design is minimal to allow the user to focus on one thing only: breathing (Law of Pragnanz). 
+
+<br>
+
+[7] Habit Goal Example: 
+
+Mindfulness category - Self Care Buckets
+
+<img src="../../assets/projects/panic/07.png"/>
+
+There are five different domains of self care that that form the basis of anxiety management: social, physical, emotional, mental, and spiritual (Queens University Health, Counselling and Disability Services, 2014). The user should be able to add as many inputs as they like to any of the five domains since each domain is unique to the user (Postel’s Law). Additionally, these domains will be separated by clearly defined boundaries (Law of Common Region), but there will be no boundaries within a domain to prevent a cluttered design.
+
+<br>
+
+[8] Long-term Goal Example:
+
+Systematic Exposure - Fear Ladder
+
+<img src="../../assets/projects/panic/08.png"/>
+
+This activity was highlighted in part 2 section 2. The fear ladder for the individual is unique in the number of steps they must go through to reach their goal so the ladder must be customizable (Postel’s Law).  
+
+<br>
+
+### Prototype 
+
+A prototype was developed in React Native on GitHub. React Native is a JavaScript library that allows developers to build native user interfaces that operate on Android, IOS, and the web.  This way, my application is both open-source and cross platform in order to be accessible to users regardless of their device. 
+
+<br>
+
+### Conclusion and Future Work
+
+I was able to make a prototype panic mitigation application by merging iCBT program requirements with user expectations. Most of the research went into how to structure an iCBT program and, consequently, lacks research on how to structure specific exercises for categories such as relaxation therapy, cognitive restructuring, mindfulness, and systematic exposure. As noted in section 1.4, users with a wide range of iCBT homework activities fare more successfully compared to those with a limited selection. This application was designed to be extensible so that in the future we can easily add specific exercises. Additionally, making a React Native prototype comes with its own advantages and disadvantages. React Native allows rapid creation of a backend which enables the product to be quickly shipped. However, by not using prototyping tools common in UX design, I could not test the efficacy of this design with tools such as Google Optimize. If I were to do this project again, I would have made this purely a design project to focus on the structure of the program, the specific exercises of the program, and modelling. I do not regret my choice of React Native, as this taught me a lot about frontend development, but the more thought that goes into the design of a product will result in a superior outcome.  Overall, I only partly achieved my goal, but this will serve as a solid foundation for future work. 
+
+<br>
+
+### Acknowledgments
+
+I would like to thank Joseph Vybihal for the opportunity to pursue a project close to my heart this summer. Thank you for the meetings, the understanding, and the light side comments you gave at the start of each #lab-meeting. Thank you, Will Guthrie for telling me to email Joseph Vybihal and Julia O’Connor for the idea.    And special thanks to  Rache Sutherland for  correcting this essay.  
+
+<br>
+
+### Appendix 1: Laws of UX
+
+(Yablonski, 2020)
+
+1.	Aesthetic Usability Effect 
+Users perceive aesthetically pleasing design as design that is more usable 
+2.	Doherty Threshold
+Productivity soars when a computer and its users interact in a way that ensures neither has to wait for the other
+3.	Fitt’s Law
+The time to acquire a target is a function of the distance to and the size of the target.  
+4.	Hick’s Law
+the time it takes to make a decision increases with the number and complexity of choices
+5.	Jakob’s Law
+Users spent most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they know. 
+6.	Law of Common Region
+Elements tend to be perceived into groups if they are sharing an area with a clearly defined boundary
+7.	Law of Pragnanz
+People will perceive and interpret ambiguous or complex images as the simplest form possible. This requires the least cognitive effort. 
+8.	Law of Proximity
+Objects that are near or proximate to eachother tend to be grouped together 
+9.	Law of Similarity
+The human eye tends to perceive similar elements in a design as a complete picture, shape, or group even when those elements are separated. 
+10.	Law of Uniform Connectedness
+Elements that are visually connected are perceived as more related then elements with no connection. 
+11.	Miller’s Law
+The average person can only keep 7 (plus or minus 2) items in their working memory
+12.	Occam’s Razor  
+Among competing hypothesis that predict equally well, one with the fewest assumptions should be selected
+13.	Pareto Principle
+The pareto principal states that for many events, roughly 80% of the effects come from 20% of the causes 
+14.	Parkinson’s Law
+Any task will inflate until all of the available time is spent
+15.	Peak-End Rule 
+People judge an experience largely based on how they felt at its peak and at its end, rather than the average of every moment of the experience.  
+16.	Postel’s Law
+be liberal in what you accept, and conservative in what you send
+17.	Serial Position Effect 
+Users have a propensity to best remember the first and last items in a series. 
+18.	Tesler’s Law
+for any system there is a certain amount of complexity that cannot be reduced. 
+19.	Von Restorff Effect
+when multiple or similar objects are present, the one that differs from the rest is most likely to be remembered 
+20.	Zeigarnik Effect
+People remember uncompleted of interrupted tasks better than completed tasks 
+
+<br>
+
+### References
+
+Andersson, G., Cuijpers, P., Carlbring, P., Riper, H., & Hedman, E. (2014). Guided Internet-based vs. face-to-face cognitive behavior therapy for psychiatric and somatic disorders: a systematic review and meta-analysis. World Psychiatry , 288–295.
+
+Anxiety Canada Association. (2019). MindShift CBT - Anxiety Canada. Retrieved from Google Play: https://play.google.com/store/apps/details?id=com.bstro.MindShift&hl=en_CA
+
+Biondi, M., & Picardi, A. (2003). Attribution of improvement to medication and increased risk of relapse of panic disorder with agoraphobia. Psychotherapy and Psychomomatics, 110-111.
+
+Bohni, M. K., Spindler, Arendt, M., Hougaard, E., & Rosenberg, N. K. (2009). A randomized study of massed three‐week cognitive behavioural therapy schedule for panic disorder. Acta Psychiatrica Scandinavica.
+
+Caglar, C. (2020). UI/UX Designer Tips. Retrieved from https://www.instagram.com/ux.cagla/?hl=en
+Cognitive Behavioral Therapy Los Angeles. (2019). CBT for Panic Attacks: Panic Attack Treatment Without Medication. Retrieved from Cognitive Behavioral Therapy Los Angeles: http://cogbtherapy.com/cbt-for-panic-attacks
+
+Fentz, H., Arendt, M., O'Toole, M., Hoffart, A., & Hougaard, E. (2014). The mediational role of panic self-efficacy in cognitive behavioral therapy for panic disorder: A systematic review and meta-analysis. Retrieved from Behaviour Research and THerapy: https://www.sciencedirect.com/science/article/abs/pii/S0005796714000849
+
+Hayward, L., MacGregor, A., Peck, D., & Wilkes, P. (2007). The Feasibility and Effectiveness of Computer-Guided CBT (FearFighter) in a Rural Area. Retrieved from Cambridge University Press: https://doi.org/10.1017/S1352465807003670
+
+JustInMind. (2020). Guide to creating user personas. Retrieved from JustInMind: https://www.justinmind.com/blog/user-persona/
+
+Karras. (2019). This Person Does Not Exist. https://thispersondoesnotexist.com/.
+Kazantzis, N., Deane, F. P., & Ronan, K. R. (2006). Homework Assignments in Cognitive and Behavioral Therapy: A Meta‐Analysis. Wiley Online Library.
+
+Kenardy JA, D. M. (2003). A comparison of delivery methods of cognitive-behavioral therapy for panic disorder: an international multicenter trial. Retrieved from J Consult Clin Psychol.: https://doi.org/10.1037/0022-006X.71.6.1068
+
+Klein, B., Richards, J., & Austin, D. (2006). Efficacy of internet therapy for panic disorder. Retrieved from Journal of Behavior Therapy and Experimental Psychiatry: https://doi.org/10.1016/j.jbtep.2005.07.001
+
+Lam, T. (2016). 6 Steps in A Common UX Design Process. Retrieved from Prototypr.io: https://blog.prototypr.io/a-common-product-ux-design-process-55af4ab5665e
+
+Magellan Health Inc. (n.d.). FearFighter - CCBT. Retrieved from App Store: https://apps.apple.com/us/app/fearfighter-ccbt/id1230258838
+
+Queens University Health, Counselling and Disability Services. (2014). Your Best You: Managing your Anxiety. Retrieved from https://www.queensu.ca/studentwellness/sites/webpublish.queensu.ca.swswww/files/files/Counselling/Anxiety%20Workbook_To%20Print.pdf
+
+Relaxio s.r.o. (2017). Daylio - Diary, Journal, Mood Tracker. Retrieved from Google Play: https://play.google.com/store/apps/details?id=net.daylio&hl=en_CA
+
+Richards, J., & Klein, B. A. (2006). Internet cognitive behavioural therapy for panic disorder: Does the inclusion of stress management information improve. Clinical Psychologist, 2 – 15.
+
+Rocket55. (2020). The Importance of User Experience. Retrieved from Rocket55: https://www.rocket55.com/lab-note/the-importance-of-user-experience/#:~:text=To%20put%20it%20simply%2C%20UX,most%20conducive%20to%20business%20success.
+
+Sarris, J. O. (2014). Lifestyle medicine for depression. Retrieved from BMC psychiatry: https://doi.org/10.1186/1471-244X-14-107
+
+Stald-Bolow, N. R., Jönsson, C., Grambye, E., & Ortiz, R. (2014). Fear Fighter Project: A context-aware solution for treating acrophobia. Retrieved from http://www.cse.chalmers.se/research/group/idc/ituniv/sider12/wp-content/uploads/stald-bolow_et_al_paper.pdf
+
+Taylor, C. (2006). Panic disorder. Retrieved from BMJ: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1444835/
+
+UXM. (2010). A step by step guide to scenario mapping. Retrieved from UXM: http://www.uxforthemasses.com/scenario-mapping/
+
+Yablonski, J. (2020). Laws of UX. Retrieved from Laws of UX: https://lawsofux.com/
+
+
+
+
+
+
+
+
