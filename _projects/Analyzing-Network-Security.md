@@ -4,6 +4,7 @@ permalink: /projects/honey
 cover-image: /assets/projects/volare/template.png
 blurb: Research project for COMP598
 category: Academic
+type: paper
 ---
 
 ### Analyzing Network Security using Cloud Computing

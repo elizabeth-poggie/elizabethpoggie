@@ -9,7 +9,7 @@
         <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
         <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
 
-        {% if page.category != "Academic" %}
+        {% if page.type != "paper" %}
             <link href="{{site.baseurl}}/assets/css/project-styles.css" rel="stylesheet">
         {% endif %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,7 +30,7 @@
     </div>
 
 
-    <div class="container p-5">
+    <div class="container" style="padding-top: .75rem;">
         <div class="row">
             <div class="col sides">
                 {{page.content}}

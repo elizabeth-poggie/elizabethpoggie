@@ -4,6 +4,7 @@ permalink: /projects/party-polarization
 cover-image: /assets/projects/volare/template.png
 blurb: Research Project for PSYC 315.
 category: Academic
+type: paper
 ---
 
 ### Party Polarisation in U.S. Politics
