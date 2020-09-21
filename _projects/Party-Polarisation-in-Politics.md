@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/party-polarization
 cover-image: /assets/projects/volare/template.png
-blurb: Research Project for PSYC 315.
+blurb: Computational psychology project
+year: 2019
 category: Academic
 type: paper
 ---

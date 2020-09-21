@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/honey
 cover-image: /assets/projects/volare/template.png
-blurb: Research project for COMP598
+blurb: Cloud computing research project
+year: 2020
 category: Academic
 type: paper
 ---

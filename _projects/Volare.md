@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/volare/
 cover-image: /assets/projects/volare/cover.png
-blurb: Magazine covers and commisions. 
+blurb: Magazine covers and commisions
+year: 2018 - 2020
 category: Art
 ---
 

@@ -2,7 +2,8 @@
 layout: project
 permalink: /papers/boltzmann
 cover-image: /assets/projects/volare/template.png
-blurb: Final project for COMP596. 
+blurb: Brain inspired AI research project
+year: 2020
 category: Academic
 type: paper
 ---

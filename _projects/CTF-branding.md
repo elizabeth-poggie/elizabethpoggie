@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/ctf/
 cover-image: /assets/projects/ctf-branding/fbpage.png
-blurb: Volunteer Work
+blurb: Club volunteer work
+year: 2019 - 2020
 category: Branding
 ---
 
