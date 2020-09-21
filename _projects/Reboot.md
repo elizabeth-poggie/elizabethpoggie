@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/reboot/
 cover-image: /assets/projects/reboot/1.png
-blurb: Sweatshirt Designs. 
+blurb: Club branding project
+year: 2020
 category: Branding
 ---
 

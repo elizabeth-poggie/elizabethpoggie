@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/portraits/
 cover-image: /assets/projects/portraits/1.png
-blurb: Commisioned work. 
+blurb: Commisions
+year: 2018 - present
 category: Art
 ---
 

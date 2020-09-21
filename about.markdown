@@ -60,7 +60,7 @@ sections:
             name: Full Stack Developer
             date:  Summer 2020
             blurb: "
-            Replacing the infrastructure of a core function of the client onboarding process for Morgan Stanley's instutional clients. Creating tables in DB2, services with spring, and components in Angular using ag-grid.
+            Replacing the core infrastructure of the client onboarding process for Morgan Stanley's instutional clients. Creating tables in DB2, services with spring, and components in Angular using ag-grid.
             "
         - position:
             name: Frontend Developer
@@ -76,24 +76,6 @@ sections:
             date:  Fall 2019 - present
             blurb: "
             Running elections for approximately 30 different student groups at McGill. Solving responsive design issues for other clubs and developing the CTF main website. Increasing student involvement in development by hosting tutorials and dev nights.
-            "
-    - subsection:
-        name: P'tit Marche
-        positions: 
-        - position: 
-            name: Services and Branding
-            date:  Summer 2018
-            blurb: "
-            Customer service, inventory, and sales part time in Summer 2018. Created promotional images for contract negotiations with IGAs in order to assert stand locations in Spring 2019. 
-            "
-    - subsection:
-        name: Windmill Heights
-        positions: 
-        - position: 
-            name: Waitress
-            date:  Spring 2015 – Fall 2017
-            blurb: "
-            Full time waitress for weddings, Christmas parties, golf tournaments, bar service, casual meals, and wine tasting events.
             "
 - section:
     name: Volunteering

@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/geometry/
 cover-image: /assets/projects/geometry/1.png
-blurb: Personal Project.
+blurb: Personal project
+year: 2018
 category: Art
 ---
 

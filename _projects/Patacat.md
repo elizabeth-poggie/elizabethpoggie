@@ -2,7 +2,8 @@
 layout: project
 permalink: /projects/patacat/
 cover-image: /assets/projects/patacat/cat.png
-blurb: McHacks 6 winner for best design.
+blurb: McHacks 6 winner for best design
+year: 2019
 category: UI/UX
 ---
 
