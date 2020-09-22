@@ -19,14 +19,20 @@ I sketched people on public transport and decomposed them into their geometric f
 
 <img src="../../assets/projects/geometry/images/1.png"/>
 
+<br>
 <img src="../../assets/projects/geometry/images/2.png"/>
 
+<br>
 <img src="../../assets/projects/geometry/images/3.png"/>
 
+<br>
 <img src="../../assets/projects/geometry/images/4.png"/>
 
+<br>
 <img src="../../assets/projects/geometry/images/5.png"/>
 
+<br>
 <img src="../../assets/projects/geometry/images/6.png"/>
 
+<br>
 <img src="../../assets/projects/geometry/images/7.png"/>
