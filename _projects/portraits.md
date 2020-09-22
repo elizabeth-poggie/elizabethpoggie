@@ -19,6 +19,8 @@ Here are a few examples of some portraits I make. Some are commissioned, some ar
 
 <img src="../../assets/projects/portraits/images/0.png"/>
 
+<br>
 <img src="../../assets/projects/portraits/images/1.png"/>
 
+<br>
 <img src="../../assets/projects/portraits/images/2.png"/>

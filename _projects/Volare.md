@@ -19,14 +19,19 @@ This is the Classic’s Creative Journal and I have done their cover for 2 years
 
 <img src="../../assets/projects/volare/images/1.png"/>
 
+<br>
 <img src="../../assets/projects/volare/images/2.png"/>
 
+<br>
 <img src="../../assets/projects/volare/images/3.png"/>
 
+<br>
 <img src="../../assets/projects/volare/images/4.png"/>
 
+<br>
 <img src="../../assets/projects/volare/images/5.png"/>
 
+<br>
 <img src="../../assets/projects/volare/images/6.png"/>
 
 

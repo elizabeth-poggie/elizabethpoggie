@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /projects/panic/
-cover-image: /assets/projects/panic/cover.png
+cover-image: /assets/projects/panic/cover2.png
 blurb: a UI/UX research project for panic
 year: 2020
 category: UI/UX
